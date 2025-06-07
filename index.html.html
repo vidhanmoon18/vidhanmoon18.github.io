@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vidhan Moon | Freelance Services</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+    nav {
+      background: #023e8a;
+      padding: 10px 10%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #90e0ef;
+      text-decoration: underline;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 3px solid #004aad;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #023e8a;
+    }
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+    .service-item {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      flex: 1 1 280px;
+      transition: box-shadow 0.3s ease;
+    }
+    .service-item:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .service-item h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+    .portfolio-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .portfolio-item h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .contact-info {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .services-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    /* Contact Form Styling */
+    #contact-form {
+      max-width: 600px;
+      margin: 30px auto 60px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    #contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #023e8a;
+    }
+    #contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      resize: vertical;
+    }
+    #contact-form button {
+      background: #004aad;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    #contact-form button:hover {
+      background: #023e8a;
+    }
+    #form-message {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 15px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vidhan Moon</h1>
+    <p>Professional Freelancer on Fiverr</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.fiverr.com/vidhanmoon" target="_blank" rel="noopener noreferrer">Fiverr Profile</a>
+  </nav>
+
+  <section id="services">
+    <h2>Services I Offer</h2>
+    <div class="services-list">
+      <div class="service-item"><h3>Email Copywriting</h3><p>High-converting email campaigns for brands and businesses.</p></div>
+      <div class="service-item"><h3>Podcast Show Notes</h3><p>Summarized notes to boost your podcast SEO and audience retention.</p></div>
+      <div class="service-item"><h3>Stock Market Articles</h3><p>In-depth finance articles with data-backed insights and market trends.</p></div>
+      <div class="service-item"><h3>Podcast Writing</h3><p>Scriptwriting for intros, interviews, and complete episodes.</p></div>
+      <div class="service-item"><h3>PowerPoint Presentation Design</h3><p>Professional slide decks with clean design and structure.</p></div>
+      <div class="service-item"><h3>Graphic Design</h3><p>Custom designs for branding, banners, social media, and YouTube thumbnails.</p></div>
+      <div class="service-item"><h3>Content Writing</h3><p>SEO-friendly content tailored for your business goals.</p></div>
+      <div class="service-item"><h3>Video Editing</h3><p>Short-form and long-form video editing for digital platforms.</p></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-item">
+      <h3>Email Copywriting - Product Launch Campaign</h3>
+      <p><strong>Client:</strong> FitFuel Nutrition</p>
+      <p><strong>Goal:</strong> Create a persuasive email campaign to drive product awareness, increase pre-orders, and build brand loyalty for a new protein supplement.</p>
+      <p><strong>Strategy:</strong> Developed a sequence of 5 engaging emails including teaser, launch announcement, benefits highlight, social proof/testimonials, and last chance offer. Each email was crafted to capture attention with emotional hooks and clear calls-to-action.</p>
+      <p><strong>Sample Email Excerpt:</strong></p>
+      <p><em>Subject Line:</em> "Fuel Your Workout Like a Pro — Meet ProBlend Protein!"</p>
+      <p>“Ready to unlock your full potential? Our new ProBlend formula combines premium whey isolate and natural superfoods to help you build muscle, recover faster, and stay energized all day long. Pre-order now and get an exclusive 20% launch discount + free shaker bottle!”</p>
+      <p><strong>Outcome:</strong> Achieved a 38% open rate and 15% click-through rate, boosting pre-orders by 25% in the first two weeks.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Podcast Show Notes - SEO & Audience Engagement</h3>
+      <p><strong>Client:</strong> The Daily Growth Podcast</p>
+      <p><strong>Goal:</strong> Enhance podcast discoverability and listener retention by creating clear, keyword-rich, and easy-to-read show notes that effectively summarize each episode’s content.</p>
+      <p><strong>Approach & Process:</strong></p>
+      <ul>
+        <li>Carefully listened to entire podcast episodes to grasp core themes and key messages.</li>
+        <li>Drafted concise, engaging summaries highlighting main discussion points and valuable takeaways for listeners.</li>
+        <li>Included timestamps to allow listeners to easily navigate to specific segments.</li>
+        <li>Researched and incorporated relevant keywords to improve SEO and boost organic discoverability across podcast platforms and search engines.</li>
+        <li>Added actionable advice and practical tips discussed in the episode to increase listener engagement and perceived value.</li>
+        <li>Included guest bios and relevant links (resources, websites, social media) to promote guest exposure and listener connection.</li>
+      </ul>
+      <p><strong>Sample Show Notes Excerpt - Episode 32: "Boosting Productivity with Mindfulness"</strong></p>
+      <p>“In this insightful episode, our host explores how mindfulness techniques can significantly improve focus, reduce stress, and enhance productivity in both personal and professional environments. Listeners learn practical mindfulness exercises, hear expert insights, and discover how to integrate these habits into daily routines for sustained benefits.”</p>
+      <p><strong>Key Segments:</strong></p>
+      <ul>
+        <li>00:00 - Introduction and episode overview</li>
+        <li>05:12 - Understanding mindfulness and its benefits</li>
+        <li>15:45 - Practical exercises to improve focus</li>
+        <li>25:30 - Expert guest interview with Dr. Jane Smith</li>
+        <li>40:00 - How to apply mindfulness at work and home</li>
+        <li>50:15 - Closing thoughts and recommended resources</li>
+      </ul>
+      <p><strong>Impact & Results:</strong> Following the implementation of professionally written show notes, the podcast saw a 30% increase in organic search traffic and a 22% growth in episode downloads within one month, contributing to enhanced audience engagement and monetization potential.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Stock Market Articles - In-Depth Financial Analysis</h3>
+      <p><strong>Client:</strong> WealthWise Financial Insights</p>
+      <p><strong>Objective:</strong> Provide accurate, data-driven articles that educate readers on market trends, investment strategies, and economic outlooks.</p>
+      <p><strong>Sample Topics Covered:</strong></p>
+      <ul>
+        <li>Monthly market recap and analysis</li>
+        <li>Investment tips for long-term growth</li>
+        <li>Sector-specific insights and stock recommendations</li>
+        <li>Impact of geopolitical events on global markets</li>
+      </ul>
+      <p><strong>Writing Style:</strong> Clear, professional, and engaging with a focus on actionable advice and factual accuracy.</p>
+      <p><strong>Reader Feedback:</strong> Increased site engagement and positive comments highlighting the usefulness and clarity of articles.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Podcast Writing - Engaging Script Development</h3>
+      <p><strong>Client:</strong> TechTalk Weekly</p>
+      <p><strong>Service Provided:</strong> Full episode scripts including intros, interview questions, and closing remarks tailored to the show’s tone and audience.</p>
+      <p><strong>Approach:</strong> Collaborated with podcast hosts to understand themes, guests, and messaging goals.</p>
+      <p><strong>Outcome:</strong> Improved episode flow, listener engagement, and production efficiency.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>PowerPoint Presentation Design</h3>
+      <p><strong>Project:</strong> Corporate Sales Pitch Deck</p>
+      <p><strong>Description:</strong> Designed a clean and professional sales pitch presentation for a tech startup aiming to attract investors.</p>
+      <p><strong>Key Features:</strong> Consistent branding, concise content layout, impactful visuals, and easy-to-follow structure.</p>
+      <p><strong>Link:</strong> <a href="https://drive.google.com/file/d/1c5PVqv3eG6vOOSa4pq2qt7JywLollc-T/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Presentation</a></p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Graphic Design</h3>
+      <p><strong>Project:</strong> Branding and Marketing Collateral</p>
+      <p><strong>Description:</strong> Created visual branding elements including logos, social media banners, and YouTube thumbnails tailored for client campaigns.</p>
+      <p><strong>Link:</strong> <a href="https://drive.google.com/file/d/1rkUp0J4US6so6YrvHhD7VDPvdFiGQGZA/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Designs</a></p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Content Writing</h3>
+      <p><strong>Client:</strong> Various Small Businesses</p>
+      <p><strong>Scope:</strong> Blog posts, website content, product descriptions, and newsletters.</p>
+      <p><strong>Results:</strong> Increased online visibility and customer engagement.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Video Editing</h3>
+      <p><strong>Client:</strong> Social Media Influencers & Small Brands</p>
+      <p><strong>Scope:</strong> Edited various short and long-form videos for YouTube, Instagram, and Facebook.</p>
+      <p><strong>Tools Used:</strong> Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve</p>
+      <p><strong>Detailed Example:</strong></p>
+      <p>For a fitness influencer, I created a motivational workout video combining high-energy clips, smooth transitions, and synchronized background music to enhance viewer engagement. This video increased their Instagram reach by 40% and received highly positive feedback from the audience.</p>
+      <p><strong>Outcome:</strong> Delivered polished, engaging videos that helped clients grow their online presence and audience interaction.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p id="form-message"></p>
+    </form>
+    <p class="contact-info">Email: <a href="mailto:vidhan.moon18@gmail.com">vidhan.moon18@gmail.com</a></p>
+    <p class="contact-info">Phone: +91-7620044966</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Vidhan Moon. All rights reserved.
+  </footer>
+
+  <script>
+    // Simple form submission simulation
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      formMessage.textContent = 'Thank you for reaching out! I will get back to you soon.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
